@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.web{
+    height: 100vh;
+    background: linear-gradient(90deg,rgb(2, 161, 176),rgb(78, 78, 78));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container{
+    width: 40%;
+    height: 20%;
+    background: rgb(192, 192, 192);
+    opacity: .4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+span{
+    font-size: 80px;
+    color: black;
+    position: relative;
+}
+
+span::after{
+    position: absolute;
+    font-size: 25px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hrs::after{
+    content: 'Hrs';
+}
+
+#min::after{
+    content: 'Min';
+}
+
+#sec::after{
+    content: 'Sec';
+}
